@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vivekkaushik.datepicker:datePickerTimeline:0.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a9f25cfd21ce251596d77eca84b3691/datePickerTimeline-0.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a9f25cfd21ce251596d77eca84b3691/datePickerTimeline-0.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vivekkaushik.datepicker/datePickerTimeline/0.0.1/21c2a4a6fc9876254be6dfbb8f6e63bcae8e759a/datePickerTimeline-0.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vivekkaushik.datepicker/datePickerTimeline/0.0.1/f9b889824cae8e94ac7350fec2e58c69a1c1279e/datePickerTimeline-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

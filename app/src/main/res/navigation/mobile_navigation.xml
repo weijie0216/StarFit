@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.starfit.ui.home.HomeFragment"
+        android:label="menu"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_challenges"
+        android:name="com.example.starfit.ui.Challenges.ChallengesFragment"
+        android:label="@string/Challenges"
+        tools:layout="@layout/fragment_challenges"/>
+    <fragment
+        android:id="@+id/nav_reminder"
+        android:name="com.example.starfit.ui.reminder.ReminderFragment"
+        android:label="@string/Reminder"
+        tools:layout="@layout/fragment_reminder"/>
+    <fragment
+        android:id="@+id/nav_editprofile"
+        android:name="com.example.starfit.ui.EditProfile.EditProfileFragment"
+        android:label="@string/EditProfile"
+        tools:layout="@layout/fragment_editprofile"/>
+    <fragment
+        android:id="@+id/nav_Language"
+        android:name="com.example.starfit.ui.Language.LanguageFragment"
+        android:label="@string/Language"
+        tools:layout="@layout/fragment_language"/>
+    <fragment
+        android:id="@+id/nav_ContactUs"
+        android:name="com.example.starfit.ui.ContactUs.ContactUsFragment"
+        android:label="@string/ContactUs"
+        tools:layout="@layout/fragment_contactus"/>
+    <fragment
+        android:id="@+id/nav_post"
+        android:name="com.example.starfit.ui.Posts.PostsFragment"
+        android:label="@string/Posts"
+        tools:layout="@layout/fragment_posts"/>
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.starfit.ui.share.ShareFragment"
+        android:label="@string/selected_item"
+        tools:layout="@layout/fragment_share"/>
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.starfit.ui.share.ShareFragment"
+        android:label="@string/selected_item"
+        tools:layout="@layout/fragment_share"/>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.starfit.ui.share.ShareFragment"
+        android:label="@string/selected_item"
+        tools:layout="@layout/fragment_share"/>
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.starfit.ui.share.ShareFragment"
+        android:label="@string/selected_item"
+        tools:layout="@layout/fragment_share"/>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.starfit.ui.share.ShareFragment"
+        android:label="@string/selected_item"
+        tools:layout="@layout/fragment_share"/>
+
+
+
+    <activity
+        android:id="@+id/nav_foodMainActivity"
+        android:name="com.example.starfit.FoodData.FoodMainActivity"
+        android:label="content_main"
+        tools:layout="@layout/content_main" />
+
+    <activity
+        android:id="@+id/nav_recordWater"
+        android:name="com.example.starfit.Water.RecordWater"
+        android:label="RecordWater"
+        tools:layout="@layout/record_water" />
+
+    <fragment
+        android:id="@+id/nav_caloriesBurn"
+        android:name="com.example.starfit.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_weight"
+        android:name="com.example.starfit.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+</navigation>

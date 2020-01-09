@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Starfit</string>
+    <string name="eng">English</string>
+    <string name="cn">中文</string>
+    <string name="bm">Bahasa Melayu</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="or">------------------------------------- OR -------------------------------------</string>
+    <string name="createNewAcc">Create New Account</string>
+    <string name="firstName">First Name:</string>
+    <string name="lastName">LastName</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="gender">Gender:</string>
+    <string name="newPassword">New Password:</string>
+    <string name="confirmPassword">Confirm New Password:</string>
+    <string name="next">Next</string>
+    <string name="enterAge">Enter Age</string>
+    <string name="enterHeight">Enter Height (cm):</string>
+    <string name="back">BACK</string>
+    <string name="enterWeight">Enter Weight (kg):</string>
+    <string name="title_activity_home_fragment">HomeFragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Posts">Posts</string>
+    <string name="Challenges">Challenges</string>
+    <string name="Reminder">Reminder</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="Language">Language</string>
+    <string name="ContactUs">ContactUs</string>
+    <string name="FAQ">FAQ</string>
+    <string name="TermandCondition">Term and Condition</string>
+    <string name="PrivacyPolicy">PrivacyPolicy</string>
+    <string name="AboutUs">About Us</string>
+    <string name="LogOut">Log Out</string>
+
+    <string name="Increase">+</string>
+    <string name="Decrease">-</string>
+
+
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="WaterAmount">Water Amount</string>
+    <string name="totalamount">/Total Amount</string>
+    <string name="submitbutton">Submit</string>
+    <string name="number">0</string>
+
+    <string name="Mode">Mode</string>
+    <string name="Remarks">Remarks</string>
+    <string name="Date">Date</string>
+    <string name="Save">Save</string>
+
+    <string name="Name">Name</string>
+    <string name="Calories">Calories</string>
+
+    <string name="Food">Food</string>
+    <string name="Water">Water</string>
+    <string name="Home">Home</string>
+    <string name="title_activity_bottom_nevigation">Bottom_nevigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+
+    <string name="CaloriesBurn">Calories Burnt</string>
+    <string name="Weight">Weight</string>
+</resources>
