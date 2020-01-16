@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Toast
-import com.example.starfit.Data.UsersDBHelper
+import com.example.starfit.Data.UserData.UsersDBHelper
 import com.example.starfit.FoodData.FoodMainActivity
 import kotlinx.android.synthetic.main.login_page.*
 import kotlinx.android.synthetic.main.login_page.editTextEmail

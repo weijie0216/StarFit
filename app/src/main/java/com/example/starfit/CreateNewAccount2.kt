@@ -3,10 +3,6 @@ package com.example.starfit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import com.example.starfit.Data.UserModel
-import com.example.starfit.Data.UsersDBHelper
-import kotlinx.android.synthetic.main.create_new_account_1.*
 import kotlinx.android.synthetic.main.create_new_account_2.*
 import kotlinx.android.synthetic.main.create_new_account_2.buttonNext
 

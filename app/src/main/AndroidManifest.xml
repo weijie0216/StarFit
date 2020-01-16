@@ -17,6 +17,8 @@
         <activity android:name=".RecordActivity"></activity>
         <activity android:name=".FoodData.AddActivity"></activity>
         <activity android:name=".FoodData.FoodMainActivity"></activity>
+        <activity android:name="com.example.starfit.HomeFragment"></activity>
+
 
 
         <activity android:name=".LoginPage">

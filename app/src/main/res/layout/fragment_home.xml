@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/background1"
 
 
 
@@ -35,6 +35,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewWater"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        android:background="@android:color/background_dark"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.954" />
@@ -53,6 +55,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/background_dark"
+        android:textColor="@color/white"
         app:layout_constraintVertical_bias="0.962" />
 
     <TextView
@@ -67,6 +71,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        android:background="@android:color/background_dark"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.897" />
@@ -79,6 +85,8 @@
         android:height="48dp"
         android:clickable="true"
         android:gravity="center"
+        android:background="@android:color/background_dark"
+        android:textColor="@color/white"
         android:text="Water Consumed"
         app:layout_constraintBottom_toTopOf="@+id/textViewCaloriesBurnt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,6 +171,52 @@
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDisplayFoodMessage"
+        android:layout_width="150dp"
+        android:layout_height="88dp"
+        android:textColor="#ff0000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCalories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerTimeline"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:id="@+id/textViewDisplayWaterMessage"
+        android:layout_width="150dp"
+        android:layout_height="89dp"
+        android:textColor="#ff0000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCalories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDisplayFoodMessage"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <ImageView
+        android:id="@+id/imageViewDIsplayHungry"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDisplayFoodMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDisplayFoodMessage"
+        app:layout_constraintTop_toTopOf="@+id/textViewDisplayFoodMessage"
+        app:srcCompat="@drawable/hungry" />
+
+    <ImageView
+        android:id="@+id/imageViewDIsplayThirsty"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDisplayWaterMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDisplayWaterMessage"
+        app:layout_constraintTop_toTopOf="@+id/textViewDisplayWaterMessage"
+        app:srcCompat="@drawable/hungry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

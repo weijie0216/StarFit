@@ -24,8 +24,12 @@ import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.widget.CalendarView
+import com.example.starfit.FoodData.Database.Food.FoodDBHelper
+import com.example.starfit.FoodData.Database.Water.WaterDBHelper
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.record_water.*
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.*
 
 
@@ -38,10 +42,6 @@ class HomeFragment : AppCompatActivity() {
         setContentView(R.layout.activity_home_fragment)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
-
-
-
 
 
 

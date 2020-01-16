@@ -60,9 +60,9 @@
     <string name="submitbutton">Submit</string>
     <string name="number">0</string>
 
-    <string name="Mode">Mode</string>
-    <string name="Remarks">Remarks</string>
-    <string name="Date">Date</string>
+    <string name="Mode">ID</string>
+    <string name="Remarks">FoodName</string>
+    <string name="Date">Calories</string>
     <string name="Save">Save</string>
 
     <string name="Name">Name</string>
@@ -88,4 +88,8 @@
 
     <string name="CaloriesBurn">Calories Burnt</string>
     <string name="Weight">Weight</string>
+
+    <string name="DisplayFoodName">Food Name : </string>
+    <string name="DisplayCalories">Calories : </string>
+
 </resources>

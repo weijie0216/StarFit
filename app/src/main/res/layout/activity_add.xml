@@ -2,63 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/foodbackground">
 
-    <ImageView
-        android:id="@+id/imageViewNeutral"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewSad"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewSad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageViewSad"
-        app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
-
-    <ImageView
-        android:id="@+id/imageViewSad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_sentiment_dissatisfied_black_24dp"
-         />
-
-    <ImageView
-        android:id="@+id/imageViewHappy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewSad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageViewSad"
-        app:layout_constraintTop_toTopOf="@+id/imageViewSad"
-        app:srcCompat="@drawable/ic_tag_faces_black_24dp"
-         />
-
-    <EditText
-        android:id="@+id/editTextRemark"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/Remarks"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewSad"
-        app:layout_constraintVertical_bias="0.225" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -72,16 +21,243 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/FoodrecycleView"
+    <TextView
+        android:id="@+id/textView2FoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewNoodles" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewNoodles"
         android:layout_width="409dp"
-        android:layout_height="340dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewSad"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewEgg"
+        app:layout_constraintVertical_bias="0.029"
+        card_view:cardBackgroundColor="@color/cardview_dark_background">
+
+
+        <ImageView
+            android:id="@+id/imageViewNoodles"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.046"
+            app:srcCompat="@drawable/noodles" />
+
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/DisplayFoodName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:text="Noodles"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/DisplayCalories"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1.38"
+            android:textColor="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewRice"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardBackgroundColor="@color/cardview_dark_background">
+
+
+        <ImageView
+            android:id="@+id/imageViewRice"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.046"
+            app:srcCompat="@drawable/rice" />
+
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/DisplayFoodName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:text="Rice"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/DisplayCalories"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1.30"
+            android:textColor="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewEgg"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardViewRice"
+        app:layout_constraintVertical_bias="0.02"
+        card_view:cardBackgroundColor="@color/cardview_dark_background">
+
+
+        <ImageView
+            android:id="@+id/imageViewEgg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewRice"
+            app:layout_constraintStart_toEndOf="@+id/imageViewRice"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRice"
+            app:srcCompat="@drawable/egg" />
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/DisplayFoodName"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:text="Egg"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/DisplayCalories"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1.55"
+            android:textColor="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextnumber"
+        android:background="@color/Black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="per gram"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

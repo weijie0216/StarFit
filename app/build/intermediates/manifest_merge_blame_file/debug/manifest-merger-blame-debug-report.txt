@@ -26,7 +26,7 @@
 17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 18
 19    <application
-19-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:5:5-32:19
+19-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:5:5-34:19
 20        android:allowBackup="true"
 20-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:6:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -61,66 +61,69 @@
 34        <activity android:name="com.example.starfit.FoodData.FoodMainActivity" />
 34-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:19:9-72
 34-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:19:19-60
-35        <activity android:name="com.example.starfit.HomeFragment" >
-35-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:22:9-28:20
-35-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:22:19-47
-36            <intent-filter>
-36-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:23:13-27:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:24:17-69
-37-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:24:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:26:17-77
-39-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:26:27-74
-40            </intent-filter>
-41        </activity>
-42        <activity
-42-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:29:9-31:50
-43            android:name="com.example.starfit.CreateNewAccount1"
-43-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:30:13-46
-44            android:label="Create New Account" />
-44-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:31:13-47
-45
-46        <service
-46-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-47            android:name="androidx.room.MultiInstanceInvalidationService"
-47-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-48            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
-48-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-49        <uses-library
-49-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-50            android:name="org.apache.http.legacy"
-50-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-51            android:required="false" />
-51-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-52
-53        <provider
-53-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:25:9-29:43
-54            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:26:13-79
-55            android:authorities="com.example.starfit.lifecycle-process"
-55-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:27:13-69
-56            android:exported="false"
-56-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:28:13-37
-57            android:multiprocess="true" />
-57-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:29:13-40
-58
-59        <activity
-59-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-60-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-61            android:exported="false"
-61-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-63
-64        <meta-data
-64-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-65            android:name="com.google.android.gms.version"
-65-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-66            android:value="@integer/google_play_services_version" />
-66-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-67    </application>
-68
-69</manifest>
+35        <activity android:name="com.example.starfit.HomeFragment" />
+35-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:20:9-78
+35-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:20:19-66
+36        <activity android:name="com.example.starfit.LoginPage" >
+36-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:24:9-30:20
+36-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:24:19-44
+37            <intent-filter>
+37-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:25:13-29:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:26:17-69
+38-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:26:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:28:17-77
+40-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:28:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:31:9-33:50
+44            android:name="com.example.starfit.CreateNewAccount1"
+44-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:32:13-46
+45            android:label="Create New Account" />
+45-->C:\Users\cheng\Desktop\Starfit\app\src\main\AndroidManifest.xml:33:13-47
+46
+47        <service
+47-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+48            android:name="androidx.room.MultiInstanceInvalidationService"
+48-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+49            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+49-->[androidx.room:room-runtime:2.2.3] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\ae89e93874d3e80cdb96567a43ec5f8b\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+50        <uses-library
+50-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+51            android:name="org.apache.http.legacy"
+51-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+52            android:required="false" />
+52-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\0ba3c633eb51706f29fb9a28f616d376\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+53
+54        <provider
+54-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:25:9-29:43
+55            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:26:13-79
+56            android:authorities="com.example.starfit.lifecycle-process"
+56-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:27:13-69
+57            android:exported="false"
+57-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:28:13-37
+58            android:multiprocess="true" />
+58-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\7182b7788dc3ee66a7a3502a07e7c6e7\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:29:13-40
+59
+60        <activity
+60-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+61-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\b13bd786ed01ffcc09e1a1f8eeab6379\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\cheng\.gradle\caches\transforms-2\files-2.1\77052555b0a71462e447ee77f63ad838\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+68    </application>
+69
+70</manifest>

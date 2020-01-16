@@ -13,7 +13,14 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
+import android.widget.Toast
+import com.example.starfit.FoodData.Database.Water.VolumeModel
+import com.example.starfit.FoodData.Database.Water.WaterDBHelper
+import kotlinx.android.synthetic.main.nav_header_activity_home_fragment.*
 import java.lang.Integer.parseInt
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 
 class RecordWater : AppCompatActivity() {
@@ -30,11 +37,12 @@ class RecordWater : AppCompatActivity() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.record_water)
-
-
+        lateinit var WaterDBHelper : WaterDBHelper
+        WaterDBHelper = WaterDBHelper(this)
 
         textViewTotalAmount.text = totalwater.toString()
 
@@ -57,6 +65,14 @@ class RecordWater : AppCompatActivity() {
 
         // Set a click listener for button widget
         buttonSubmit.setOnClickListener{
+
+
+            if(WaterDBHelper.readWater(DATE = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMd")).toString()).isNotEmpty()){
+                WaterDBHelper.update(Volume = like.toInt(),DATE = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMd")).toString())
+            }
+            else{
+                WaterDBHelper.insertWater(VolumeModel(Date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMd")).toString(),Volume = like.toInt()))
+            }
 
             // Variable to hold progress status
             var progressStatus = 0;
@@ -89,6 +105,8 @@ class RecordWater : AppCompatActivity() {
                     })
                 }
             }).start() // Start the operation
+
+
         }
 
 

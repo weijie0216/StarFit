@@ -1,12 +1,12 @@
 package com.example.starfit
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
-import com.example.starfit.Data.UserModel
-import com.example.starfit.Data.UsersDBHelper
+import com.example.starfit.Data.UserData.UserModel
+import com.example.starfit.Data.UserData.UsersDBHelper
 import kotlinx.android.synthetic.main.create_new_account_1.*
 
 class CreateNewAccount1 : AppCompatActivity() {
@@ -24,7 +24,7 @@ class CreateNewAccount1 : AppCompatActivity() {
             var name = this.editTextFirstName.text.toString()
             var email = this.editTextEmail.text.toString()
             var password = this.editTextPassword.text.toString()
-            var result = usersDBHelper.insertUser(UserModel(name = name,email = email,Password = password))
+            var result = usersDBHelper.insertUser(UserModel(name = name, email = email, Password = password))
             //clear all edittext s
             this.editTextPassword.setText("")
             this.editTextEmail.setText("")

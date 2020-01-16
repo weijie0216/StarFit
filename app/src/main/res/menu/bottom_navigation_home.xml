@@ -3,28 +3,30 @@
 
     <item
         android:id="@+id/nav_foodMainActivity"
-        android:icon="@drawable/food"
-        android:title="@string/Food" />
+        android:icon="@drawable/foo2"
+        android:title="@string/Food"
+        />
 
     <item
         android:id="@+id/nav_recordWater"
-        android:icon="@drawable/food"
-        android:title="@string/Water" />
+        android:icon="@drawable/water9"
+        android:title="@string/Water"
+        />
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/home3"
+        android:icon="@drawable/ic_home_white_48dp"
         android:title="@string/title_home" />
 
 
     <item
         android:id="@+id/nav_caloriesBurn"
-        android:icon="@drawable/home3"
+        android:icon="@drawable/kcal2"
         android:title="@string/CaloriesBurn" />
 
     <item
         android:id="@+id/nav_weight"
-        android:icon="@drawable/home3"
+        android:icon="@drawable/weight3"
         android:title="@string/Weight" />
 
 

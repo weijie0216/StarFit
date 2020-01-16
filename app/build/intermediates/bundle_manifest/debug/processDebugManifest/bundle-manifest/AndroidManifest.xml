@@ -32,7 +32,8 @@
         <activity android:name="com.example.starfit.RecordActivity" />
         <activity android:name="com.example.starfit.FoodData.AddActivity" />
         <activity android:name="com.example.starfit.FoodData.FoodMainActivity" />
-        <activity android:name="com.example.starfit.HomeFragment" >
+        <activity android:name="com.example.starfit.HomeFragment" />
+        <activity android:name="com.example.starfit.LoginPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
