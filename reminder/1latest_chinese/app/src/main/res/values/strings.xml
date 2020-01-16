@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Reminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_set_clock">Set Time</string>
+    <string name="str_save">Save</string>
+    <string name="str_delete">Delete</string>
+    <string name="edit">Edit</string>
+</resources>
